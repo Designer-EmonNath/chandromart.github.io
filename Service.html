@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChandroMart | Service</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="store.js" async></script>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Service.html">Store</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    
+        <h1 class="name name-1">CHANDROMART</h1>
+        <div class="container">
+    <button class="btn btn-header" type="button">Get our Latest Giveway</button>
+</div>
+    <button class="btn btn-header btn-play" type="button">&#9658;</button>
+</header>
+
+<section class="content-section container">
+    <h2 class="section-header">UIISII</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title"> C-100 </span>
+            <img class="shop-item-img" src="../img/uiisii-c100.jpg" >
+            <div class="shop-item-details">
+                <span class="shop-item-price"> 200 Tk </span>
+                <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+            </div>
+        </div>
+            
+                <div class="shop-item">
+                    <span class="shop-item-title"> C-200 </span>
+                    <img class="shop-item-img" src="../img/uiisii-c200.jpg" >
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"> 300 Tk </span>
+                        <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                        <div class="shop-item">
+                            <span class="shop-item-title"> HM-12 </span>
+                            <img class="shop-item-img" src="../img/uiisii-12.jpg" >
+                            <div class="shop-item-details">
+                                <span class="shop-item-price"> 350 Tk </span>
+                                <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+                            </div>
+                         </div>
+                        
+
+                                <div class="shop-item">
+                                    <span class="shop-item-title"> HM-13 </span>
+                                    <img class="shop-item-img" src="../img/uiisii-13.jpeg"  width="250px">
+                                    <div class="shop-item-details">
+                                        <span class="shop-item-price"> 400 Tk </span>
+                                        <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+                                    </div>
+                                 </div>
+                   
+                        
+                </div>
+    </div>
+    </section>
+    <section class="content-section container">
+        <h2 class="section-header">QKZ</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title"> DM-7 </span>
+                <img class="shop-item-img" src="../img/QKZ-7.jpg" >
+                <div class="shop-item-details">
+                    <span class="shop-item-price"> 450 Tk </span>
+                    <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+                </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"> DM-9 </span>
+                    <img class="shop-item-img" src="../img/QKZ-9.jpg" >
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"> 430 Tk </span>
+                        <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+                    </div>
+                    </div>
+        </div>
+    </section>
+    <section class="content-section container">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-coloum">ITME</span>
+            
+            <span class="cart-price cart-header cart-coloum">PRICE</span>
+            
+            <span class="cart-quantity cart-header cart-coloum">QUANTITY</span>
+            
+        </div>
+    <div class="cart-items">
+        
+    </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">0 Tk</span>
+        </div>
+        
+            <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
+        
+    
+    </section>
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+        <h3 class="name ">CHANDROMART</h3>
+        <ul class="nav footer-nav">
+            <li>
+                <a href="https://faebook.com" target="blank">
+                    <img src="../img/fb-logo.png" height="20px"
+                width="20px">
+            </a>
+        </li>
+            <li>
+                <a href="https://instagram.com" target="blank">
+                    <img src="../img/inst-logo.jpg" height="20px"
+                width="20px">
+            </a>
+        </li>
+            <li>
+                <a href="https://youtube.com" target="blank">
+                    <img src="../img/yt-logo.png" height="20px"
+                width="20px">
+            </a>
+        </li>
+        </ul>
+    </div>
+    </footer>
+    
+</body>
+</html>
+
+<!--
+    function updateCartTotal(){
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    var total = 0
+    for (var i=0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')
+        [0]
+        var price = parseFloat(priceElement.innerText.replace('Tk', ''))
+        var quantity = quantityElement.Value
+        total = total + (price * quantity)
+    }
+    document.getElementsByClassName('cart-total-price')[0].innerText = 'Tk' + total
+}
+-->
+
+<!--
+    <div class="cart-row">
+            <div class="cart-item cart-coloum">
+                <img class="cart-item-img" src="../img/QKZ-10.jpg" height="100px" width="100px">
+                <span class="cart-item-title">DM 7</span>
+           </div>
+            
+            <span class="cart-price cart-coloum">350 Tk</span>
+            
+            <div class="cart-quantity cart-coloum">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger cart-quantity-btn" role="button">REMOVE</button>
+            </div>
+        </div>
+        <div class="cart-row">
+            <div class="cart-item cart-coloum">
+            <img class="cart-item-img" src="../img/uiisii-13.jpeg" height="100px" width="100px">
+            <span class="cart-item-title">HM 13</span>
+        </div>
+            
+            <span class="cart-price cart-coloum">420 Tk</span>
+            <div class="cart-quantity cart-coloum">
+                <input class="cart-quantity-input" type="number" value="1">
+                
+                <button class="btn btn-danger cart-quantity-btn" role="button">REMOVE</button>
+            </div>
+        </div>
+-->
